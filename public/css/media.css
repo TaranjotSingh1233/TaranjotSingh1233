@@ -1,0 +1,157 @@
+
+@media only screen and (max-width: 999px) {
+    #form {
+        width: 97%;
+        display: flex;
+        /* flex-direction: row; */
+        /* justify-content: space-around; */
+        /* gap: 0px; */
+    }
+
+    #messageinput {
+        width: 60%;
+        max-width: 300px;
+        height: 55px;
+        padding: 12px 9px;
+        border: 2px solid rgb(255 254 254);
+        border-radius: 6px;
+        box-shadow: 2px 3px 30px black;
+        outline: none;
+        background-color: rgb(30, 30, 30);
+        font-weight: 600;
+        color: white;
+        animation-name: light;
+        animation-duration: 3s;
+    }
+    
+#nav h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 2px 3px 30px black;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0px 40px;
+    align-items: center;
+    animation: navlight 7s ease infinite;
+    transition: all ease 3s;
+}
+
+@keyframes navlight {
+    0% {
+        background-image: linear-gradient(to right, #ff0000, yellow);
+        color: rgb(230, 255, 1);
+    }
+
+    30% {
+        background-image: linear-gradient(to left, #ff0000, #ffff00);
+        color: rgb(255, 255, 255);
+    }
+
+    60% {
+        background-image: linear-gradient(to right, #ff0000, #ffff00);
+        color: rgb(226, 251, 0);
+    }
+
+    80% {
+        background-image: linear-gradient(to left, #ff0000, #ffff00);
+        color: rgb(255, 255, 255);
+    }
+
+    100% {
+        background-image: linear-gradient(to right, red, #ffff00);
+        color: rgb(226, 251, 0);
+    }
+}
+}
+@media only screen and (max-width: 440px) {
+    #footer{
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 8px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        animation: footlight 4s ease infinite;
+        transition: all ease 100ms;
+        font-weight: 900;
+        text-shadow: 2px 2px 5px black;
+    }
+    .container {
+        padding: 18px;
+        color: white;
+        background-color: #000000d9;
+        max-width: 995px;
+        height: 60vh;
+        margin: auto;
+        border-radius: 10px;
+        overflow-y: auto;
+        margin-bottom: 20px;
+        position: relative;
+        box-shadow: 2px 3px 30px black;
+        animation-name: light;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+.message {
+    padding: 10px;
+    width: 60%;
+    margin: 20px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 17px;
+    overflow: auto;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.627), #ffff009d);
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+body::before {
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    background-image: url("../IMG/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    background-position: 50% 50%;
+    animation-name: move-bg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes move-bg {
+    0% {
+        background-position: 50% 50%;
+    }
+
+    30% {
+        background-position: -2% -2%;
+
+    }
+
+    60% {
+        background-position: 100% 100%;
+
+    }
+}
+
+
+}
